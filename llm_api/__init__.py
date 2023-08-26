@@ -7,6 +7,7 @@ import requests
 from aiohttp import ClientSession
 
 from llm_api.completion import Completion
+from llm_api.error import APIError, InvalidRequestError, LlmApiError  # noqa: F401
 
 __all__ = ["Completion"]
 
