@@ -4,6 +4,12 @@ This python library connects to (llm-api)[https://github.com/1b5d/llm-api] using
 
 # Usage
 
+You can install this library using pip
+
+```
+pip install llm-api-python
+```
+
 After running (llm-api)[https://github.com/1b5d/llm-api], simply configure your client as if it's OpenAI's python binding
 
 ```python

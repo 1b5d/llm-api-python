@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "llm-api"
+name = "llm-api-python"
 version = "0.0.1"
 description = "A python lib to call LLM API models."
 authors = ["1b5d <8110504+1b5d@users.noreply.github.com>"]
