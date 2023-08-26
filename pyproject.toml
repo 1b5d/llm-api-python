@@ -7,6 +7,7 @@ homepage = "https://github.com/1b5d/llm-api-python"
 readme = "README.md"
 license = "MIT"
 repository = "https://github.com/1b5d/llm-api-python"
+packages = [{include = "llm_api"}]
 
 [tool.poetry.dependencies]
 python = "^3.8.1"
