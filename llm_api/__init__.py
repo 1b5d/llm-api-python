@@ -6,10 +6,10 @@ from typing import Callable, Optional, Union
 import requests
 from aiohttp import ClientSession
 
-from llm_api.completion import Completion
+from llm_api.completion import ChatCompletion
 from llm_api.error import APIError, InvalidRequestError, LlmApiError  # noqa: F401
 
-__all__ = ["Completion"]
+__all__ = ["ChatCompletion"]
 
 api_key = os.environ.get("LLM_API_API_KEY")
 api_key_path: Optional[str] = os.environ.get("LLM_API_API_KEY_PATH")

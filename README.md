@@ -1,6 +1,6 @@
 # LLM API for python
 
-This python library connects to (llm-api)[https://github.com/1b5d/llm-api] using python, it was build to mimic (OpenAI's python library)[https://github.com/openai/openai-python]
+This python library connects to [llm-api](https://github.com/1b5d/llm-api) using python, it was build to mimic [OpenAI's python library](https://github.com/openai/openai-python)
 
 # Usage
 
@@ -10,31 +10,31 @@ You can install this library using pip
 pip install llm-api-python
 ```
 
-After running (llm-api)[https://github.com/1b5d/llm-api], simply configure your client as if it's OpenAI's python binding
+After running [llm-api](https://github.com/1b5d/llm-api), simply configure your client as if it's OpenAI's python binding
 
 ```python
 import llm_api
 
 llm_api.api_key = "<your llm-api api key here>"
 
-completion = llm_api.Completion.create(messages=[
+completion = llm_api.ChatCompletion.create(messages=[
     {
         "role": "system", 
         "content": "You are a helpful assistant, please answer the users' questions with honesty and accuracy."
     }, {
         "role": "user", "content": "What is the capital of France?"
     }
-])  # returns a completion object
+])  # returns a chat completion object
 
-completion = llm_api.Completion.create(messages=[
+completion = llm_api.ChatCompletion.create(messages=[
     ...
 ], stream=True) # returns a generator
 
-completion = await llm_api.Completion.acreate(messages=[
+completion = await llm_api.ChatCompletion.acreate(messages=[
     ...
-]) # returns a completion object
+]) # returns a chat completion object
 
-completion = await llm_api.Completion.acreate(messages=[
+completion = await llm_api.ChatCompletion.acreate(messages=[
     ...
 ], stream=True) # returns a async generator
 

@@ -11,7 +11,7 @@ MAX_TIMEOUT = 20
 DEFAULT_PROMPT = "You are a helpful assistant."
 
 
-class Completion(ApiObject):
+class ChatCompletion(ApiObject):
     """A wrapper for LLM API client completion."""
 
     @classmethod
