@@ -1,13 +1,13 @@
 [tool.poetry]
 name = "llm-api-python"
-version = "0.0.1"
+version = "0.0.2"
 description = "A python lib to call LLM API models."
 authors = ["1b5d <8110504+1b5d@users.noreply.github.com>"]
 homepage = "https://github.com/1b5d/llm-api-python"
 readme = "README.md"
 license = "MIT"
 repository = "https://github.com/1b5d/llm-api-python"
-packages = [{include = "llm_api"}]
+packages = [{ include = "llm_api" }]
 
 [tool.poetry.dependencies]
 python = "^3.8.1"
